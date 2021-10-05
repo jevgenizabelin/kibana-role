@@ -1,6 +1,6 @@
 galaxy_info:
-  author: Jevgeni Zabelin
-  description: Install Kibana role
+  author: jevgeni_zabelin
+  description: install_kibana_role
   company: netology
   role_name: kibana_role
   # If the issue tracker for your role is not on github, uncomment the
