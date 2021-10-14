@@ -1,3 +1,4 @@
 kibana-role/files/*
 kibana-role/molecule/default/files/*
 */files/*
+kibana-role/molecule/light/files/*
