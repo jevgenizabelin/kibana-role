@@ -1,3 +1,7 @@
 server.host: 0.0.0.0
-elasticsearch.hosts: ["http://{{ hostvars['el-instance']['ansible_facts']['default_ipv4']['address'] | default('0.0.0.0') }}:9200"]
+{% if hostvars[kibana_elastic_host] is defined %}
+elasticsearch.hosts: ["http://{{ hostvars[kibana_elastic_host]['ansible_facts']['default_ipv4']['address'] | default('0.0.0.0') }}:9200"]
+{% else %}
+elasticsearch.hosts: ["http://0.0.0.0:9200"]
+{% endif %}
 kibana.index: ".kibana"
